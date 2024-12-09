@@ -1,0 +1,80 @@
+#data-table {
+    display: none;
+    background-color: rgb(210, 69, 69);
+  }
+  .hidden{
+    display: none;
+  }
+  #no-result{
+    color: red;
+    display: none;
+    background-color: yellow;
+  }
+img{
+    width: 15%;
+}
+body{
+
+ background: url(img/school.png);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+padding: auto;
+
+}
+  .min-logo img{
+    width: 8%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container input{
+    padding: 10px 20px;
+    background-color:#ccc;
+    outline: none;
+    border-radius: 5px;
+    border-color: #ccc;
+  }
+  .container button{
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  @media  (max-width:500px){
+    .min-logo img{
+      width: 49%;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    body{
+
+      background: url(img/school.png);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-attachment: fixed;
+     left: 1;
+     
+     
+     }
+  }
+  @media  (max-width:1300px){
+    .min-logo img{
+      width: 12%;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+  }
