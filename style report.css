@@ -1,0 +1,62 @@
+.circle {
+    border-radius: 50%;
+}
+    
+    .responsive {
+        width:auto;
+        height: auto;
+    } 
+
+
+    body{
+        background-color: #f5f3f4;
+    }
+    table,th,td{
+        border: 1px solid black;
+    }
+    .respon {
+        width: 75%;
+        height: 75%;
+    }
+    .fifty {
+        width: 50%;
+        height: 50%;
+    }
+    .autu {
+        width: auto;
+        height: auto;
+    }
+    h1 {
+        color: whitesmoke;
+        text-align: center;
+        background-color: #123;
+        }
+        a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px 0px;
+        border-radius: 8px;
+        align-items: center;
+        gap: 40px;
+        transition: .5s;
+        background-color: #19070755;
+        color: black;
+        }
+    .med{
+        width: 30%;
+        height: 30%;  
+    }
+    a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px 0px;
+        border-radius: 8px;
+        align-items: center;
+        gap: 40px;
+        transition: .5s;
+        background-color: #19070755;
+        color: black;
+        }
+        

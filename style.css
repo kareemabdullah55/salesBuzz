@@ -1,0 +1,204 @@
+/* تنسيق عام */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* تنسيق الرابط "العوده الى الخلف" */
+.back-link {
+    font-size: 1.2rem;
+    color: #ffffff; /* اللون الأبيض للنص */
+    background-color: #ff5722; /* خلفية برتقالية */
+    padding: 10px 20px; /* تباعد داخلي لجعل الرابط أكبر */
+    border-radius: 5px; /* حواف مستديرة */
+    text-decoration: none; /* إزالة الخط السفلي من الرابط */
+    display: inline-block; /* جعل الرابط يعرض ككتلة داخل السطر */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* إضافة تأثيرات انتقالية */
+}
+
+/* تغيير لون الخلفية عند التمرير على الرابط */
+.back-link:hover {
+    background-color: #e64a19; /* لون أغمق عند التمرير */
+    transform: translateY(-3px); /* تأثير رفع خفيف عند التمرير */
+}
+
+/* تعديل الرابط على الشاشات الصغيرة */
+@media (max-width: 480px) {
+    .back-link {
+        font-size: 1rem; /* تصغير الحجم للأجهزة الصغيرة */
+        padding: 8px 15px; /* تقليل التباعد الداخلي */
+    }
+}
+
+
+/* إعدادات الجسم */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.8;
+    direction: rtl;
+    padding: 20px;
+}
+
+/* العنوان الرئيسي */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+/* العناوين الثانوية */
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin: 30px 0 15px;
+    text-align: center;
+    border-bottom: 2px solid #ff5722;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* الفقرات */
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* قائمة غير مرتبة */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+/* عناصر القائمة */
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+/* رموز النقاط للقائمة */
+ul li::before {
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #ff5722;
+}
+
+/* الصور المتجاوبة */
+.responsive {
+    width: 100%;
+    max-width: 100%;  /* تعديل من max-width: 600px إلى max-width: 100% */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* الحواف بين الفقرات والعناصر */
+hr {
+    border: 1px solid #ff5722;
+    margin: 20px 0;
+}
+
+/* تنسيق للأزرار داخل الحركات */
+sub {
+    font-size: 1.5rem;
+    vertical-align: super;
+}
+
+/* تنسيق لقائمة الحركات */
+ol {
+    font-size: 1.1rem;
+    margin-left: 20px;
+}
+
+/* تحسين التباعد بين الفقرات */
+b p {
+    margin-bottom: 20px;
+}
+
+/* تحسين قائمة الحركات المالية */
+ol li {
+    margin-bottom: 15px;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    ol li {
+        font-size: 1rem;
+    }
+
+    .responsive {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* تنسيق أفضل للعناصر عند الشاشات الصغيرة */
+    .navbar {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar li {
+        margin-bottom: 10px;
+    }
+}
+
+/* تصميم متجاوب للأجهزة الأصغر من 480px */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+
+    ol li {
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .responsive {
+        max-width: 100%;
+        height: auto;
+    }
+}
